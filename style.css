@@ -1,0 +1,146 @@
+@font-face {
+    font-family: Fonte;
+    src: url(./fonte/JunigardenSerif_PERSONAL_USE_ONLY.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b4d5efd0;
+    background-image: url(https://cdn.pixabay.com/animation/2024/04/14/14/42/14-42-00-824_512.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: end;
+}
+
+h1  {
+    font-family: Fonte;
+    font-weight: 900;
+    font-size: 5em;
+    text-align: center;
+    color: rgb(75, 146, 200);
+    text-shadow: 2px 4px 4px #0000007e;
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+input {
+    display: none;
+}
+
+.bar{
+    background-color: #ffffff;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;;
+    transition: 0.5s;
+}
+
+.bar:hover{
+    background-color: rgb(82, 122, 255);
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 800%;
+    box-shadow: 4px 4px #000000;
+}
+
+.imagem{
+    width: 12.5%;
+    /* transition: all 1s ease; */
+    transition: all 1s cubic-bezier(.17,.67,1,-0.18);
+    transition: all 1s cubic-bezier(.03,.47,.13,.99);
+}
+
+#imagem1:checked ~ .img1{
+    margin: 0;
+}
+
+#imagem2:checked ~ .img2{
+    margin-left: -12.5%;
+}
+
+
+#imagem3:checked ~ .img3{
+    margin-left: -25%;
+}
+
+#imagem4:checked ~ .img4{
+    margin-left: -37.5%;
+}
+
+#imagem5:checked ~ .img5{
+    margin-left: -50%;
+}
+
+#imagem6:checked ~ .img6{
+    margin-left: -62.5%;
+}
+
+#imagem7:checked ~ .img7{
+    margin-left: -75%;
+}
+
+#imagem8:checked ~ .img8{
+    margin-left: -87.5%;
+}
+
+
+footer {
+    bottom: 0;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #00000087;
+    width: 100%;
+    color: aliceblue;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+    img {
+        margin-right: 20px;
+        height: auto;
+        max-width: 100%;
+    }
+    .container {
+        height: 300px;
+        width: 340px;
+    }
+    body {
+    background-position: end;
+    background-size: 360%;
+    }
+    }
+    
